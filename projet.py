@@ -8,23 +8,26 @@ candidats = ['albert','emilie','oscar','marine','max']
     {'nb':727,'rang':[5,2,4,3,1]}
     {'nb':364,'rang':[5,4,2,3,1]}
  ]
+
  
- 
-def un_tour:
-   
+def un_tour():
+   return "candidats gagnant"
 
 
-def deux_tour:
+def deux_tour():
+   return "candidats gagnant"
 
 
-
-def lastman_standing:
-
-
-
-def condorcet:
+def lastman_standing():
+   return "candidats gagnant"
 
 
 
-def borda:
+def condorcet():
+   return "candidats gagnant" 
+
+
+
+def borda():
+   return "candidats gagnant" 
 
