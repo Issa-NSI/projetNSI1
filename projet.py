@@ -9,3 +9,22 @@ candidats = ['albert','emilie','oscar','marine','max']
     {'nb':364,'rang':[5,4,2,3,1]}
  ]
  
+ 
+def un_tour:
+   
+
+
+def deux_tour:
+
+
+
+def lastman_standing:
+
+
+
+def condorcet:
+
+
+
+def borda:
+
