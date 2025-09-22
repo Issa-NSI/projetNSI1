@@ -31,6 +31,22 @@ un_tour(vote)
 
 
 def deux_tour():
+   scores = [0,0,0,0,0] #initialise les scores des candidats a 0
+   for vote in votes:
+      nb= vote['nb'] #nombre de votes pour le candidat
+      r= vote ['rang'] #classement des votes 
+      for i in range ( len ( candidats)): 
+         if r[i]==1: # si en parcourant le tableau 
+            scores[i]=scores[i]+ nb
+            break
+   
+   
+   
+   
+   
+   
+   
+   
    return "candidats gagnant"
 
 
