@@ -11,12 +11,12 @@ vote = [
 
  
 def un_tour(votes):
-   scores = [0,0,0,0,0]
+   scores = [0,0,0,0,0] #initialise les scores des candidats a 0
    for vote in votes:
-      nb= vote['nb']
-      r= vote ['rang']
-      for i in range ( len ( candidats)):
-         if r[i]==1:
+      nb= vote['nb'] #nombre de votes pour le candidat
+      r= vote ['rang'] #classement des votes 
+      for i in range ( len ( candidats)): 
+         if r[i]==1: # si en parcourant le tableau 
             scores[i]=scores[i]+ nb
    maxi=scores[0]
    ind_gagnant = 0
