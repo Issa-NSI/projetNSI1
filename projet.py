@@ -11,13 +11,13 @@ vote = [
 
  
 def un_tour(votes):
-   scores = (0,0,0,0,0)
+   scores = [0,0,0,0,0]
    for vote in votes:
       nb= vote['nb']
       r= vote ['rang']
       for i in range ( len ( candidats)):
          if r[i]==1:
-            scores [i]=scores [i]+ nb
+            scores[i]=scores[i]+ nb
    maxi=scores[0]
    ind_gagnant = 0
    for i in range (1,len(scores)):
@@ -27,7 +27,7 @@ def un_tour(votes):
    print("un tour-->gagnant:",candidats[ind_gagnant],"scores:",scores)
    return ind_gagnant, scores 
 
-
+un_tour(vote)
 
 
 def deux_tour():
