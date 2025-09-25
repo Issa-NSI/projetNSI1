@@ -78,11 +78,7 @@ def deux_tour():
 
 def lastman_standing():
    return "candidats gagnant"
-
-
-
-def condorcet():
-   return "candidats gagnant" 
+ 
 
 
 
