@@ -27,14 +27,14 @@ def un_tour(votes):
    print("un tour-->gagnant:",candidats[ind_gagnant],"scores:",scores)
    return ind_gagnant, scores 
 
-un_tour(vote)
+
 
 def condorcet(votes):
    n=len(candidats)
-   duels= [[0]*n for_in range (n)] # tableau des duels 
+   duels= [[0]*n for i in range (n)] # tableau des duels 
    #on remplit le tableau des duels 
-    for vote in votes:
-      nd=vote['nb'] # nb électeurs 
+   for vote in votes:
+      nb=vote['nb'] # nb électeurs 
       r=vote['rang'] # classement 
       for i in range (n):
          for j in range (n):
@@ -53,9 +53,10 @@ def condorcet(votes):
          return i
       else :
          print ("Condorcet->pas de vainqueur")
-         return None 
+         return None
+ 
 
-
+condorcet(vote)
 def deux_tour():
    scores = [0,0,0,0,0] #initialise les scores des candidats a 0
    for vote in votes:
